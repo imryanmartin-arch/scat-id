@@ -1,0 +1,14 @@
+{
+  "name": "Scat ID – Jackson County",
+  "short_name": "Scat ID",
+  "description": "Offline scat identification for southern Oregon hunters",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#121814",
+  "theme_color": "#1d2a1f",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

@@ -1,0 +1,7 @@
+training/.venv/
+training/data/
+app/node_modules/
+app/package-lock.json
+*.log
+__pycache__/
+.DS_Store

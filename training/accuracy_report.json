@@ -1,0 +1,133 @@
+{
+ "backbone": "base",
+ "C": 0.001,
+ "n_train_photos": 19229,
+ "n_test_photos": 2775,
+ "top1": 0.665,
+ "top3": 0.861,
+ "per_class": {
+  "deer": {
+   "n_test": 133,
+   "top1": 0.609,
+   "top3": 0.842
+  },
+  "elk": {
+   "n_test": 66,
+   "top1": 0.545,
+   "top3": 0.818
+  },
+  "bear": {
+   "n_test": 342,
+   "top1": 0.713,
+   "top3": 0.892
+  },
+  "cougar": {
+   "n_test": 116,
+   "top1": 0.448,
+   "top3": 0.819
+  },
+  "coyote": {
+   "n_test": 239,
+   "top1": 0.301,
+   "top3": 0.653
+  },
+  "bobcat": {
+   "n_test": 210,
+   "top1": 0.614,
+   "top3": 0.843
+  },
+  "grayfox": {
+   "n_test": 129,
+   "top1": 0.411,
+   "top3": 0.814
+  },
+  "raccoon": {
+   "n_test": 108,
+   "top1": 0.407,
+   "top3": 0.778
+  },
+  "ringtail": {
+   "n_test": 94,
+   "top1": 0.755,
+   "top3": 0.968
+  },
+  "opossum": {
+   "n_test": 5,
+   "top1": 0.0,
+   "top3": 0.0
+  },
+  "skunk": {
+   "n_test": 6,
+   "top1": 0.333,
+   "top3": 0.333
+  },
+  "porcupine": {
+   "n_test": 59,
+   "top1": 0.763,
+   "top3": 0.864
+  },
+  "rabbit": {
+   "n_test": 226,
+   "top1": 0.823,
+   "top3": 0.978
+  },
+  "otter": {
+   "n_test": 176,
+   "top1": 0.886,
+   "top3": 0.955
+  },
+  "wolf": {
+   "n_test": 229,
+   "top1": 0.572,
+   "top3": 0.764
+  },
+  "turkey": {
+   "n_test": 42,
+   "top1": 0.738,
+   "top3": 0.857
+  },
+  "grouse": {
+   "n_test": 116,
+   "top1": 0.836,
+   "top3": 0.931
+  },
+  "dog": {
+   "n_test": 23,
+   "top1": 0.348,
+   "top3": 0.565
+  },
+  "cattle": {
+   "n_test": 18,
+   "top1": 0.5,
+   "top3": 0.778
+  },
+  "horse": {
+   "n_test": 27,
+   "top1": 0.593,
+   "top3": 0.815
+  },
+  "notscat": {
+   "n_test": 411,
+   "top1": 0.927,
+   "top3": 0.971
+  }
+ },
+ "confusions": [
+  "coyote -> cougar: 31",
+  "grayfox -> ringtail: 29",
+  "coyote -> grayfox: 28",
+  "wolf -> coyote: 27",
+  "wolf -> cougar: 27",
+  "coyote -> wolf: 26",
+  "bobcat -> cougar: 26",
+  "bear -> raccoon: 25",
+  "coyote -> bobcat: 23",
+  "cougar -> bobcat: 21",
+  "deer -> elk: 20",
+  "rabbit -> elk: 18",
+  "bobcat -> coyote: 13",
+  "wolf -> dog: 11",
+  "ringtail -> grayfox: 11"
+ ],
+ "temperature": 1.05
+}
