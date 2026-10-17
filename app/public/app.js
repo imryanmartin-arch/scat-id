@@ -217,8 +217,11 @@ async function renderLog() {
 
 // ---------- guide ----------
 function renderGuide() {
-  $("#guide").innerHTML = Object.entries(SPECIES).filter(([k]) => k !== "notscat").map(([, sp]) => `<div class="guide-item">
-    <h3>${sp.name}</h3><p>${sp.looks}</p><p><b>Season:</b> ${sp.season}</p><p><b>Where:</b> ${sp.where}</p><p><b>Look-alikes:</b> ${sp.lookalikes}</p></div>`).join("") +
+  $("#guide").innerHTML = Object.entries(SPECIES).filter(([k]) => k !== "notscat").map(([k, sp]) => `<div class="guide-item">
+    <h3>${sp.name}</h3>
+    ${PHOTOS[k] ? `<figure><img src="guide/${k}.jpg" alt="${sp.name} scat" loading="lazy">
+      <figcaption><a href="${PHOTOS[k].obs}">${PHOTOS[k].credit}</a></figcaption></figure>` : ""}
+    <p>${sp.looks}</p><p><b>Season:</b> ${sp.season}</p><p><b>Where:</b> ${sp.where}</p><p><b>Look-alikes:</b> ${sp.lookalikes}</p></div>`).join("") +
     `<p class="fine">Model trained on ~23,000 Creative Commons scat photos from iNaturalist contributors —
      <a href="https://github.com/imryanmartin-arch/scat-id/blob/main/training/credits.csv" style="color:var(--accent)">photo credits</a>.
      Non-commercial use only. Report possible wolf sign to ODFW.</p>`;
